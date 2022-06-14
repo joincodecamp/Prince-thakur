@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <style>
+      #container1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border: 1px solid black;
+        padding: 1%;
+      }
+      #container2 {
+        border: 1px solid black;
+        display: flex;
+        margin-top: 30;
+        padding: 1%;
+        justify-content: space-around;
+      }
+      #container3 {
+        display: flex;
+        padding: 1%;
+        margin-top: 5%;
+        justify-content: space-around;
+        border: 1px solid black;
+      }
+      .container:hover{
+        background-color: rgb(144, 139, 176);
+      }
+      .item:hover{
+        color: red;
+        
+      }
+      
+      body{
+        background-image: url(bck.jpg);
+      }
+    </style>
+    <title>flexbox</title>
+  </head>
+  <body>
+    <div class="container" id="container1">
+      <div class="item">Home</div>
+      <div class="item">Your orders</div>
+      <div class="item">My cart</div>
+      <div class="item">Profile</div>
+    </div>
+    <div class="container" id="container2">
+      <div class="item">Payment</div>
+      <div class="item">status</div>
+      <div class="item">Questions</div>
+      <div class="item">Requirement</div>
+      <div class="item">feedback</div>
+      <div class="item">Report</div>
+    </div>
+    <div class="container" id="container3">
+      <div class="item">Eat</div>
+      <div class="item">sleep</div>
+      <div class="item">Code</div>
+      <div class="item">Repeat</div>
+    </div>
+  </body>
+</html>
