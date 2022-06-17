@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    
+    <title>project</title>
     <style>
-      body {
+     *, body {
         font-family: "Courier New", Courier, monospace;
+        margin:0;
+        padding:0;
+        
+        box-sizing:border-box;
+
       }
       #box1{
         display:flex ;
+        
         background-color: #2c3e50;
         justify-content: space-around;
         align-items: center;
        color: #ffffff;
-       width: 100%;
-      position: fixed;
-       top: 0%
-       ;
+      
+       top: 0%;
       }
     .header{
       font-size: 1.25rem;
@@ -22,6 +30,7 @@
       
      .nav {
         display: flex;
+        flex-wrap: wrap;
         list-style: none;
      }
      ul li a:hover{
@@ -36,20 +45,20 @@
         font-size: 1.25rem;
       }
     
-      .avtar {
+      #box22 {
         background-color: #1abc9c;
         text-align: center;
         color: #ffffff;
         padding: 13%;
       }
-      .avtar h1{
+      #box22 h1{
         font-size: 2.75rem;
       }
-      .avtar p{
+      #box22 p{
         font-size: 1.25rem;
       }
-      .avtar img{
-        width:400px;
+      #box22 img{
+       
         height:300px;
       }
      
@@ -58,9 +67,9 @@
         text-align: center;
         color: #2c3e50;
         font-size: larger;
-        margin: 0 auto;
-        max-width: 1300px;
-        width: 100%;
+      
+
+       
       }
       .portfolio{
         font-size: 1.75rem;
@@ -70,13 +79,15 @@
       .png{
         display: flex;
         flex-wrap: wrap;
+        margin-left: 14%;
+        box-sizing: unset;
       }
       .png img{
-       width: 400px;
-       height: 300px;
-       flex: 0 0 31.23%;
-       padding: 7px;
-       display: block;
+       width: 360px;
+       height: 260px;
+       padding: 21px;
+       display: flex;
+       flex-wrap: wrap;
       }
            
 
@@ -95,8 +106,9 @@
       }
       .para{
         display: flex;
-        justify-content: space-between;
-        padding: 70px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+       
       }
       .para1{
         float: left;
@@ -147,7 +159,6 @@
         background-color: #1abc9c;
        
         color: white;
-        margin:10px 1000px 0px 0px;
       }
      
       #box5 {
@@ -171,14 +182,46 @@
         background-color: #1abc9c;
       }
      
+        
+        
+        
+      @media only screen and (max-width: 700px) {
+        .container{
+         width: 100%;
+        padding: 0;
+         height: auto;
+          
+        }
+        #box5{
+          flex-direction: column;
+        }
+       .png{
+        margin: 0;
+       }
+       .para1{
+        width: max-content;
+        margin-bottom: 30px;
+        
+       }
+        .para2{
+          width:max-content;
+          margin-bottom: 30px;
+                }
+.png img{
+  width: 100%;
+}
+}
+     
     
     </style>
-    <title>project</title>
+
+    
   </head>
   <body>
     <div class="container" id="box1">
       <div class="header">
-        <h1>START BOOTSTRAP</h1></div>
+        <h1>START BOOTSTRAP</h1>
+        </div>
         <ul class="nav">
           <li><a href="#"> PORTFOLIO</a></li>
           <li><a href="#"> ABOUT</a></li>
@@ -186,7 +229,7 @@
         </ul> 
         
       </div>
-      <div class="avtar">
+      <div class="container" id="box22">
         <img src="avtar.svg" alt="avtar"  >
         <h1>START BOOTSTRAP</h1>
         <p>Graphics Artist-Web Designer-IIIustrator</p>
