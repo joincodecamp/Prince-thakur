@@ -4,55 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /*css*/
-        body{
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-#hello{
-    text-align: center;
-    border-style: double;
-background-color: aqua;
-}
-#hello button:hover{
-    color: black;
-    background-color: aqua;
-}
-button{
-    color: white;
-    background-color: darkmagenta;
-}
-
-    </style>
+   <link rel="stylesheet" href="style.css">
     <title>adding two numbers in javascript</title>
-
-
 </head>
 <body>
-    <!--html-->
-   <div id="hello"> <p>First Number: <input type="number" id="form1"></p>
+    
+   <div id="hello"> 
+    <p>First Number: <input type="number" id="form1"></p>
 
 <p>Second Number: <input type="number" id="form2"></p>
+<!--button-->
 
-<button onclick="add()">Add</button>
+<button onclick="hhh()">Add</button>
+<!--result-->
 
 <p> Sum = <input  id="result"></p></div>
 
-<!--javaScript-->
+     <script src="index.js"></script>
 
-     <script>
-     
-function add()
-{
-  let x, y, z;
-  x = parseFloat(document.getElementById("form1").value);
-  y = parseFloat(document.getElementById("form2").value);
-  z = x + y;
-  document.getElementById("result").value = z;
-}
-</script>
-
-      
-    
 </body>
 </html>
