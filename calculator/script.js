@@ -2,12 +2,15 @@ let firstNumber;
 let secondNumber;
 let operator;
 function operatorValue(op){
+   
      if(!operator){
+        document.getElementById("input").value+=op;
      firstNumber=document.getElementById('input').value;
-     document.getElementById('input').value="";
+    //  document.getElementById('input').value="";
      operator=op;
 
 }
+
 }
 function addValue(get){
      document.getElementById("input").value+=get;
@@ -19,10 +22,10 @@ function getValue(){
     let result;
      secondNumber=document.getElementById('input').value;
      if(operator == '+'){
-         result= parseFloat(firstNumber) +parseFloat( secondNumber);
+         result= parseFloat(firstNumber) + parseFloat( secondNumber);
      }
           else if(operator =='-'){
-         result= parseFloat(firstNumber )- parseFloat(secondNumber);
+          result= parseFloat(firstNumber )- parseFloat(secondNumber);
 
      }
      else if(operator =='*'){
