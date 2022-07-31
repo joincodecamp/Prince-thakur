@@ -196,7 +196,7 @@ form input, form button {
   border: 1px solid black;
   
     margin: 5px;
- 
+    padding: 0
    
     
 }
@@ -227,7 +227,4 @@ body {
   align-items: center;
  
 }
-span{
-  color: red;
-  margin-left: 30px;
-}
+
